@@ -1,0 +1,15 @@
+1
+Kašalj
+RIJETKO
+4
+Grlobolja
+RIJETKO
+2
+Temperatura
+SREDNJE
+3
+Glavobolja
+ČESTO
+5
+Otežano disanje
+SREDNJE

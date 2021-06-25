@@ -1,0 +1,6 @@
+2
+KONJUKTIVITIS
+1,
+1
+GRIPA
+1,2,

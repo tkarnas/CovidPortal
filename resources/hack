@@ -1,0 +1,78 @@
+ // ____________________________________________________________________________________
+        Simptom temp = new Simptom("Temperatura", "RIJETKO");
+        Simptom kasalj = new Simptom("Kasalj", "SREDNJE");
+        Simptom glavobolja = new Simptom("Glavobolja", "CESTO");
+
+        simptomi.add(temp);
+        simptomi.add(kasalj);
+        simptomi.add(glavobolja);
+
+        Set<Simptom> simptomiViroze = new HashSet<>();
+        simptomiViroze.add(temp);
+        Set<Simptom> simptomiGripe = new HashSet<>();
+        simptomiGripe.add(temp);
+        simptomiGripe.add(kasalj);
+        Set<Simptom> simptomiCovida = new HashSet<>();
+        simptomiCovida.add(temp);
+        simptomiCovida.add(kasalj);
+        simptomiCovida.add(glavobolja);
+
+        Zupanija zagrebacka = new Zupanija("Zagrebacka", 309000, 500);
+        Zupanija splitska = new Zupanija("Splitsko-dalmatinska", 450000, 350);
+        Zupanija karlovacka = new Zupanija("Karlovacka", 141000, 240);
+
+        zupanije.add(zagrebacka);
+        zupanije.add(splitska);
+        zupanije.add(karlovacka);
+
+        Bolest viroza = new Bolest("Viroza", simptomiViroze);
+        Virus gripa = new Virus("Gripa", simptomiGripe);
+        Virus covid = new Virus("Covid", simptomiCovida);
+
+        bolesti.add(viroza);
+        bolesti.add(gripa);
+        bolesti.add(covid);
+
+        Osoba pero = new Osoba.Builder("Pero", "Perić")
+                .isOld(44)
+                .liveIn(zagrebacka)
+                .suffersFrom(viroza)
+                .build();
+
+        List<Osoba> kontaktiAne = new ArrayList<>();
+        kontaktiAne.add(pero);
+
+        Osoba ana = new Osoba.Builder("Ana", "Anić")
+                .isOld(24)
+                .liveIn(splitska)
+                .suffersFrom(gripa)
+                .hasContactWith(kontaktiAne)
+                .build();
+
+        List<Osoba> kontaktiMarka = new ArrayList<>();
+        kontaktiMarka.add(pero);
+        kontaktiMarka.add(ana);
+
+        Osoba marko = new Osoba.Builder("Marko", "Marić")
+                .isOld(32)
+                .liveIn(karlovacka)
+                .suffersFrom(covid)
+                .hasContactWith(kontaktiMarka)
+                .build();
+
+        List<Osoba> kontaktiTome = new ArrayList<>();
+        kontaktiTome.add(marko);
+
+        Osoba tomo = new Osoba.Builder("Tomislav", "Karnas")
+                .isOld(32)
+                .liveIn(karlovacka)
+                .suffersFrom(gripa)
+                .hasContactWith(kontaktiTome)
+                .build();
+
+        osobe.add(pero);
+        osobe.add(ana);
+        osobe.add(marko);
+        osobe.add(tomo);
+
+        // ________________________________________________________________________________________

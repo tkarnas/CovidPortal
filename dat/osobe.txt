@@ -1,0 +1,30 @@
+Tomislav
+Karnas
+27
+1
+3
+
+Nikola
+Karnas
+28
+2
+3
+Tomislav Karnas,
+Ivo
+Ivić
+44
+3
+3
+Tomislav Karnas,Nikola Karnas,
+Nicole
+Galović
+25
+1
+2
+Tomislav Karnas,Ivo Ivić,
+Marko
+Markić
+21
+3
+1
+Nikola Karnas,
